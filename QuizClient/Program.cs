@@ -16,7 +16,10 @@ namespace QuizClient
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Model model = new Model();
+            IViewMenu view = new FormMenu(model);
+            Presenter presenter = new Presenter(view, model);
+            Application.Run((Form)view);
         }
     }
 }
