@@ -88,7 +88,7 @@
             this.labelQuizTitle.TabIndex = 5;
             this.labelQuizTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -99,8 +99,8 @@
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonStart);
             this.Controls.Add(this.buttonLoad);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormMenu";
+            this.Text = "Quiz";
             this.ResumeLayout(false);
             this.PerformLayout();
 

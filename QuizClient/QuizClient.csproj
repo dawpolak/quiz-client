@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Views\AnswerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\AnswerControl.Designer.cs">
+      <DependentUpon>AnswerControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presenters\PresenterQuiz.cs" />
     <Compile Include="Views\FormQuiz.cs">
       <SubType>Form</SubType>
@@ -69,6 +75,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\IViewMenu.cs" />
     <Compile Include="Views\IViewQuiz.cs" />
+    <EmbeddedResource Include="Views\AnswerControl.resx">
+      <DependentUpon>AnswerControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

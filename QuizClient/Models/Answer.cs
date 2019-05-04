@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuizClient
 {
-    class Answer
+    public class Answer
     {
         public string text;
         public bool isCorrect;

@@ -30,6 +30,9 @@
         {
             this.labelQuestion = new System.Windows.Forms.Label();
             this.flowLayoutAnswers = new System.Windows.Forms.FlowLayoutPanel();
+            this.buttonNext = new System.Windows.Forms.Button();
+            this.buttonFinish = new System.Windows.Forms.Button();
+            this.labelAmountOfQestions = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelQuestion
@@ -42,16 +45,48 @@
             // 
             // flowLayoutAnswers
             // 
-            this.flowLayoutAnswers.Location = new System.Drawing.Point(63, 128);
+            this.flowLayoutAnswers.AutoScroll = true;
+            this.flowLayoutAnswers.Location = new System.Drawing.Point(12, 105);
             this.flowLayoutAnswers.Name = "flowLayoutAnswers";
-            this.flowLayoutAnswers.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutAnswers.Size = new System.Drawing.Size(776, 291);
             this.flowLayoutAnswers.TabIndex = 1;
+            // 
+            // buttonNext
+            // 
+            this.buttonNext.Location = new System.Drawing.Point(688, 402);
+            this.buttonNext.Name = "buttonNext";
+            this.buttonNext.Size = new System.Drawing.Size(100, 36);
+            this.buttonNext.TabIndex = 2;
+            this.buttonNext.Text = "Next";
+            this.buttonNext.UseVisualStyleBackColor = true;
+            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
+            // 
+            // buttonFinish
+            // 
+            this.buttonFinish.Location = new System.Drawing.Point(12, 402);
+            this.buttonFinish.Name = "buttonFinish";
+            this.buttonFinish.Size = new System.Drawing.Size(110, 36);
+            this.buttonFinish.TabIndex = 3;
+            this.buttonFinish.Text = "Finish";
+            this.buttonFinish.UseVisualStyleBackColor = true;
+            this.buttonFinish.Click += new System.EventHandler(this.buttonFinish_Click);
+            // 
+            // labelAmountOfQestions
+            // 
+            this.labelAmountOfQestions.AutoSize = true;
+            this.labelAmountOfQestions.Location = new System.Drawing.Point(601, 412);
+            this.labelAmountOfQestions.Name = "labelAmountOfQestions";
+            this.labelAmountOfQestions.Size = new System.Drawing.Size(0, 17);
+            this.labelAmountOfQestions.TabIndex = 4;
             // 
             // FormQuiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelAmountOfQestions);
+            this.Controls.Add(this.buttonFinish);
+            this.Controls.Add(this.buttonNext);
             this.Controls.Add(this.flowLayoutAnswers);
             this.Controls.Add(this.labelQuestion);
             this.Name = "FormQuiz";
@@ -66,5 +101,8 @@
 
         private System.Windows.Forms.Label labelQuestion;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutAnswers;
+        private System.Windows.Forms.Button buttonNext;
+        private System.Windows.Forms.Button buttonFinish;
+        private System.Windows.Forms.Label labelAmountOfQestions;
     }
 }
